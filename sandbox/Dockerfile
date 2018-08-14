@@ -4,7 +4,7 @@ RUN pip install numpy pandas matplotlib scikit-learn scipy sklearn && \
     apt-get update && \
     apt-get install vim wget -y && \
     touch ~/.vimrc && \
-    echo "set t_Co=256\nsyntax on\ncolorscheme minimalist" > ~/.vimrc && \
+    echo "set t_Co=256" > ~/.vimrc && \
     echo "syntax on" >> ~/.vimrc && \
     echo "colorscheme minimalist" >> ~/.vimrc && \
     mkdir -p ~/.vim/colors && \
