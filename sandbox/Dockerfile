@@ -1,7 +1,6 @@
-FROM python:latest
+FROM romson/python:3.7.0
 
-RUN pip install numpy pandas matplotlib scikit-learn scipy sklearn && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install vim wget -y && \
     touch ~/.vimrc && \
     echo "set t_Co=256" > ~/.vimrc && \
