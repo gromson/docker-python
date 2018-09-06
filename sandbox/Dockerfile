@@ -7,6 +7,7 @@ RUN pip install numpy pandas matplotlib scikit-learn scipy sklearn && \
     echo "set t_Co=256" > ~/.vimrc && \
     echo "syntax on" >> ~/.vimrc && \
     echo "colorscheme minimalist" >> ~/.vimrc && \
+    echo "set number" >> ~/.vimrc && \
     mkdir -p ~/.vim/colors && \
     wget https://raw.githubusercontent.com/dikiaap/minimalist/master/colors/minimalist.vim -O ~/.vim/colors/minimalist.vim
 
